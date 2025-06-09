@@ -135,8 +135,8 @@ const Orders = () => {
         console.log(response);
         const order_id = response.data.id;
         const options = {
-          key: "rzp_test_ayUd0ehWxUbVZE", // Enter the Key ID generated from the Dashboard
-          amount: "505050", // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
+          key: "rzp_test_Jw8V7SnQmuNwTD", // Enter the Key ID generated from the Dashboard
+          amount: parseFloat(grossed.toExponential(5)), // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
           currency: "INR",
           name: "DineSmart",
           description: "Test Transaction",
